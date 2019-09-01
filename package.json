@@ -5,11 +5,16 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "run-ios": "react-native run-ios --simulator='iPhone 7'",
+    "emulator5X": "emulator -no-snapshot -avd Nexus_5X_API_27",
+    "run-android": "react-native run-android"
   },
   "dependencies": {
+    "@react-native-community/push-notification-ios": "^1.0.2",
     "react": "16.8.6",
-    "react-native": "0.60.5"
+    "react-native": "0.60.5",
+    "react-native-push-notification": "^3.1.9"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
